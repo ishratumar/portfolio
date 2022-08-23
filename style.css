@@ -198,8 +198,8 @@ section .title::after{
 }
 .home .home-content a{
     display: inline-block;
-    background: #FFBD59;
-    color: #fff;
+    color: #FFBD59;
+    background: none;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
@@ -209,8 +209,8 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: #FFBD59;
-    background: none;
+    background: #FFBD59;
+    color: #fff;
 }
 
 /* about section styling */
@@ -254,7 +254,7 @@ section .title::after{
 }
 .about .about-content .right a:hover{
     color: #FFBD59;
-    background: none;
+    background: #fff;
 }
 
 /* services section styling */
