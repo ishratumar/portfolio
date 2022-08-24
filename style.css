@@ -165,7 +165,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/heroo (1).png") no-repeat center;
+    background: url("images/heroo.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -378,7 +378,7 @@ section .title::after{
     width: 70%;
 }
 
-/* teams section styling */
+/* Projects section styling */
 .teams .title::after{
     content: "who with me";
 }
@@ -419,6 +419,27 @@ section .title::after{
 }
 .teams .carousel .card:hover img{
     border-color: #fff;
+}
+.teams .carousel .box .button-style{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.teams .carousel .box a{
+    display: inline-block;
+    background: none;
+    color: #FFBD59;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #FFBD59;
+    transition: all 0.3s ease;
+}
+.teams .carousel .box a:hover{
+    color: #fff;
+    background: #FFBD59;
 }
 .owl-dots{
     text-align: center;
