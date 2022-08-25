@@ -362,20 +362,27 @@ section .title::after{
     top: 0;
     background: #FFBD59;
 }
+.skills li::marker{
+    content: '✨';
+    color: #FFBD59;
+}
 .skills-content .right .html::before{
     width: 90%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 75%;
 }
 .skills-content .right .js::before{
-    width: 80%;
+    width: 60%;
+}
+.skills-content .right .wordpress::before{
+    width: 75%;
 }
 .skills-content .right .php::before{
     width: 50%;
 }
 .skills-content .right .mysql::before{
-    width: 70%;
+    width: 50%;
 }
 
 /* Projects section styling */
@@ -390,9 +397,9 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+/* .teams .carousel .card:hover{
     background: #FFBD59;
-}
+} */
 .teams .carousel .card .box{
     display: flex;
     flex-direction: column;
