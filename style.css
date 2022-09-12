@@ -165,7 +165,8 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/heroo.png") no-repeat center;
+    /* background: url("images/heroo.png") no-repeat center; */
+    background-color: #0A0806;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -179,6 +180,13 @@ section .title::after{
 }
 .home .max-width .row{
   margin-right: 0;
+}
+.home .home-content{
+    display: flex;
+}
+.home .home-content .left{
+    width: 75%;
+    padding-top: 95px;
 }
 .home .home-content .text-1{
     font-size: 27px;
@@ -212,7 +220,35 @@ section .title::after{
     background: #FFBD59;
     color: #fff;
 }
-
+.home .home-content .right{
+    width: 25%;
+    padding-top: 50px;
+}
+.home .hero-image {
+    position: relative;
+  }
+  
+  .home .hero-image img {
+    transition: 300ms;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .home .hero-image img:hover {
+    transform: rotate(-6deg);
+  }
+  
+  .home .hero-image .photo-bg {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 45px;
+    top: 24px;
+  
+    background: #FFBD59;
+    transform: rotate(-6deg);
+  }
+  
 /* about section styling */
 .about .title::after{
     content: "who i am";
