@@ -162,11 +162,11 @@ section .title::after{
 }
 
 
-/* home section styling */
-.home{
+/* header section styling */
+/* header section styling */
+.header{
     display: flex;
-    /* background: url("images/heroo.png") no-repeat center; */
-    background-color: #0A0806;
+    background: url("images/hero-image.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -174,40 +174,33 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
-.home .max-width{
+.header .max-width{
   width: 100%;
   display: flex;
 }
-.home .max-width .row{
+.header .max-width .row{
   margin-right: 0;
 }
-.home .home-content{
-    display: flex;
-}
-.home .home-content .left{
-    width: 75%;
-    padding-top: 95px;
-}
-.home .home-content .text-1{
+.header .header-content .text-1{
     font-size: 27px;
 }
-.home .home-content .text-2{
+.header .header-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3{
+.header .header-content .text-3{
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+.header .header-content .text-3 span{
     color: #FFBD59;
     font-weight: 500;
 }
-.home .home-content a{
+.header .header-content a{
     display: inline-block;
-    color: #FFBD59;
     background: none;
+    color: #FFBD59;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
@@ -216,39 +209,10 @@ section .title::after{
     border: 2px solid #FFBD59;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover{
-    background: #FFBD59;
+.header .header-content a:hover{
     color: #fff;
-}
-.home .home-content .right{
-    width: 25%;
-    padding-top: 50px;
-}
-.home .hero-image {
-    position: relative;
-  }
-  
-  .home .hero-image img {
-    transition: 300ms;
-    position: relative;
-    z-index: 100;
-  }
-  
-  .home .hero-image img:hover {
-    transform: rotate(-6deg);
-  }
-  
-  .home .hero-image .photo-bg {
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    left: 45px;
-    top: 24px;
-  
     background: #FFBD59;
-    transform: rotate(-6deg);
-  }
-  
+} 
 /* about section styling */
 .about .title::after{
     content: "who i am";
@@ -423,7 +387,7 @@ section .title::after{
 
 /* Projects section styling */
 .projects .title::after{
-    content: "who with me";
+    content: "work I did before";
 }
 .projects .carousel .card{
     background: #222;
@@ -660,13 +624,13 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
-    .home .home-content .text-2{
+    .header .header-content .text-2{
         font-size: 70px;
     }
-    .home .home-content .text-3{
+    .header .header-content .text-3{
         font-size: 35px;
     }
-    .home .home-content a{
+    .header .header-content a{
         font-size: 23px;
         padding: 10px 30px;
     }
@@ -699,13 +663,13 @@ footer span a:hover{
     .max-width{
         padding: 0 23px;
     }
-    .home .home-content .text-2{
+    .header .header-content .text-2{
         font-size: 60px;
     }
-    .home .home-content .text-3{
+    .header .header-content .text-3{
         font-size: 32px;
     }
-    .home .home-content a{
+    .header .header-content a{
         font-size: 20px;
     }
     .services .serv-content .card{
@@ -714,10 +678,10 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
-    .home .home-content .text-2{
+    .header .header-content .text-2{
         font-size: 50px;
     }
-    .home .home-content .text-3{
+    .header .header-content .text-3{
         font-size: 27px;
     }
     .about .about-content .right .text,
