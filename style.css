@@ -363,7 +363,7 @@ section .title::after{
     background: #FFBD59;
 }
 .skills li::marker{
-    content: '✨';
+    content: '⚡';
     color: #FFBD59;
 }
 .skills-content .right .html::before{
@@ -387,7 +387,7 @@ section .title::after{
 
 /* Projects section styling */
 .projects .title::after{
-    content: "work I did before";
+    content: "previous work";
 }
 .projects .carousel .card{
     background: #222;
