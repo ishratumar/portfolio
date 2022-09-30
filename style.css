@@ -652,6 +652,17 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    .projects .carousel .card{
+        width: 100%;
+    }
+    .projects .carousel .card img{
+        height: 330px;
+        width: 650px;
+        object-fit:scale-down;
+        border-radius: 2%;
+        border: 5px solid #FFBD59;
+        transition: all 0.3s ease;
+    }
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
@@ -675,6 +686,18 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
+    .projects .carousel .card{
+        width: 100%;
+    }
+    .projects .carousel .card img{
+        height: 230px;
+        width: 450px;
+        object-fit:scale-down;
+        border-radius: 2%;
+        border: 5px solid #FFBD59;
+        transition: all 0.3s ease;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -687,6 +710,17 @@ footer span a:hover{
     .about .about-content .right .text,
     .skills .skills-content .left .text{
         font-size: 19px;
+    }
+    .projects .carousel .card{
+        width: 100%;
+    }
+    .projects .carousel .card img{
+        height: 150px;
+        width: 280px;
+        object-fit:scale-down;
+        border-radius: 2%;
+        border: 5px solid #FFBD59;
+        transition: all 0.3s ease;
     }
     .contact .right form .fields{
         flex-direction: column;
