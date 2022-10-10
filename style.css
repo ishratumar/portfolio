@@ -421,7 +421,7 @@ section .title::after{
     width: 950px;
     object-fit: cover;
     border-radius: 2%;
-    border: 5px solid #FFBD59;
+    border: 3px solid #FFBD59;
     transition: all 0.3s ease;
 }
 .projects .carousel .card:hover img{
@@ -573,11 +573,26 @@ footer{
     text-align: center;
 }
 footer span a{
-    color: #FFBD59;
+    color: #fff;
     text-decoration: none;
 }
 footer span a:hover{
     text-decoration: underline;
+    color: #FFBD59;
+}
+footer .icons{
+    padding-top: 0.8rem;
+    padding-bottom: 0.2rem;
+}
+
+footer .icons a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0.2rem;
+    color: #f4f4f4;
+}
+footer .icons a:hover{
+    color: #FFBD59;
 }
 
 
