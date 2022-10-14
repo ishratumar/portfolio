@@ -311,7 +311,8 @@ section .title::after{
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
-.skills .skills-content .left .text{
+.skills .skills-content .left .text,
+.skills .skills-content .right .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -335,56 +336,20 @@ section .title::after{
     color: #FFBD59;
     background: none;
 }
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #FFBD59;
-}
 .skills li::marker{
     content: '⚡';
     color: #FFBD59;
 }
-.skills-content .right .html::before{
-    width: 90%;
+.skills .skills-content .right .skills-icons{
+    display: flex;
+    margin-bottom: 30px;
+    margin: 10px 74px 24px 0px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 60px;
+    color: #263238;
 }
-.skills-content .right .css::before{
-    width: 75%;
-}
-.skills-content .right .js::before{
-    width: 60%;
-}
-.skills-content .right .wordpress::before{
-    width: 75%;
-}
-.skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
-    width: 50%;
-}
-
 /* Projects section styling */
 .projects .title::after{
     content: "previous work";
@@ -397,9 +362,6 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-/* .projects .carousel .card:hover{
-    background: #FFBD59;
-} */
 .projects .carousel .card .box{
     display: flex;
     flex-direction: column;
@@ -723,8 +685,14 @@ footer .icons a:hover{
         font-size: 27px;
     }
     .about .about-content .right .text,
-    .skills .skills-content .left .text{
+    .skills .skills-content .left .text,
+    .skills .skills-content .right .text{
         font-size: 19px;
+    }
+    .skills .skills-content .right .skills-icons{
+        align-items: center;
+        font-size: 40px;
+        justify-content: space-between;
     }
     .projects .carousel .card{
         width: 100%;
