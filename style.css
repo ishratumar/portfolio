@@ -474,8 +474,8 @@ section .title::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
-    font-size: 60px;
+    font-weight: 400;
+    font-size: 40px;
     color: #263238;
     flex-wrap: wrap;
 }
@@ -488,9 +488,12 @@ section .title::after{
 }
 
 .skills .skills-content .right .skills-icons i {
-    background-color: rgba(255, 189, 89, 0.3);
+    background-color: transparent;
     padding: 15px;
-    border-radius: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    border: 1px solid #ffbd59;
     transition: all 0.3s ease;
 }
 
@@ -585,94 +588,36 @@ section .title::after{
 .contact .title::after{
     content: "get in touch";
 }
-.contact .contact-content .column{
-    width: calc(50% - 30px);
-}
-.contact .contact-content .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.contact .contact-content .left p{
-    text-align: justify;
-}
-.contact .contact-content .left .icons{
-    margin: 10px 0;
-}
-.contact .contact-content .row{
+.contact .contact-content {
     display: flex;
-    height: 65px;
     align-items: center;
+    justify-content: center;
 }
-.contact .contact-content .row .info{
-    margin-left: 30px;
+.contact .contact-content p{
+    text-align: center;
 }
-.contact .contact-content .row i{
-    font-size: 25px;
-    color: #FFBD59;
-}
-.contact .contact-content .info .head{
-    font-weight: 500;
-}
-.contact .contact-content .info .sub-title{
-    color: #333;
-}
-.contact .right form .fields{
-    display: flex;
-}
-.contact .right form .field,
-.contact .right form .fields .field{
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-.contact .right form .textarea{
-    height: 80px;
-    width: 100%;
-}
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea{
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
-}
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
-}
-.contact .right form .textarea textarea{
-  padding-top: 10px;
-  resize: none;
-}
-.contact .right form .button-area{
+.contact .contact-content {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
-.right form .button-area button{
+.contact .contact-content .button-area a{
   color: #fff;
   display: block;
-  width: 160px!important;
+  margin-top: 20px;
   height: 45px;
   outline: none;
   font-size: 18px;
   font-weight: 500;
   border-radius: 6px;
+  padding: 10px 30px;
   cursor: pointer;
   flex-wrap: nowrap;
   background: #FFBD59;
   border: 2px solid #FFBD59;
   transition: all 0.3s ease;
 }
-.right form .button-area button:hover{
+.contact .contact-content .button-area a:hover{
   color: #FFBD59;
   background: none;
 }
@@ -841,7 +786,7 @@ footer .icons a:hover{
     .skills .skills-content .right .skills-icons .icon{
         align-items: center;
         font-size: 40px;
-        justify-content: space-between; */
+        justify-content: space-between; 
         display: flex;
         flex-wrap: wrap; 
     }
