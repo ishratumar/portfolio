@@ -470,17 +470,21 @@ section .title::after{
 }
 
 /* Common rules for skills-icons */
-.skills .skills-icons-common {
+.skills .skills-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 500;
     font-size: 60px;
     color: #263238;
+    flex-wrap: wrap;
 }
 
 .skills .skills-content .right .skills-icons {
     margin: 16px 0;
+}
+.skills .skills-content .right .skills-icons .icon{
+    margin-bottom: 30px;
 }
 
 .skills .skills-content .right .skills-icons i {
@@ -492,19 +496,6 @@ section .title::after{
 
 .skills .skills-content .right .skills-icons i:hover {
     transform: scale(1.1);
-}
-
-@media screen and (max-width: 768px) {
-    .skills .column {
-        width: 100%;
-    }
-    .skills .column.left,
-    .skills .column.right {
-        order: unset;
-    }
-    .skills .title {
-        font-size: 36px;
-    }
 }
   
   
@@ -847,10 +838,12 @@ footer .icons a:hover{
     .skills .skills-content .right .text{
         font-size: 19px;
     }
-    .skills .skills-content .right .skills-icons{
+    .skills .skills-content .right .skills-icons .icon{
         align-items: center;
         font-size: 40px;
-        justify-content: space-between;
+        justify-content: space-between; */
+        display: flex;
+        flex-wrap: wrap; 
     }
     .projects .carousel .card{
         width: 100%;
