@@ -96,7 +96,7 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #111;
+    color: #f1f1f1;
     font-size: 35px;
     font-weight: 600;
 }
@@ -166,12 +166,13 @@ section .title::after{
 .header{
     position: relative;
     display: flex;
+    color: #f1f1f1;
     justify-content: center;
     align-items: center;
     height: 100vh;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
-    background: linear-gradient(to right, #fff, #FFBD59);
+    background: linear-gradient(to right, #1b1b1b, #111);
 }
 
 .shapes-container {
